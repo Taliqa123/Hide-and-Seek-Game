@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hiding Game</title>
+		<style></style>
+	</head>
+	<body>
+		<h1>Hide and Seek Game</h1>
+
+		<div id="element">
+			<p>Hide me</p>
+		</div>
+		<button onclick="hideSeek()">Click Me</button>
+		<script>
+			function hideSeek() {
+				var element = document.getElementById('element');
+				if (element.style.display === 'none') {
+					element.style.display = 'block';
+				} else {
+					element.style.display = 'none';
+				}
+			}
+		</script>
+	</body>
+</html>
